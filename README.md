@@ -1,7 +1,7 @@
 # Volt-Amp-Log
 Raspberry Pi Voltage and Current Data logger for Simprints Fingerprint Scanner
 
-Introduction
+<b>Introduction</b>
 
 Measuring Voltages and Currents is  necessary for some of the manufacturing tests for the Simprints finger print scanners.
 
@@ -11,11 +11,9 @@ One way to do this is to use a Rasbery Pi with an I2C A to D expansion board(s).
 
 If you can measure voltage, you can also measure current using the following method:
 
-Use a high wattage / very low impedance resistor and an Op-Amp you can measure current by amplifying the very small voltage drop across the resistor
+Use a high wattage / very low impedance resistor and an Op-Amp you can measure current by amplifying the very small voltage drop across the resistor.
 
-The Raspberry Pi Project that I have planned is:
-
-SOFTWARE
+<b>SOFTWARE</b>
 
 1. Download the latest version of Raspian from here
 https://www.raspberrypi.org/downloads/
@@ -29,7 +27,7 @@ https://www.raspberrypi.org/downloads/
 4. Follow the instructions  on how to configure the Ra Pi A to D
 https://www.abelectronics.co.uk/p/17/ADC-Pi-V2---Raspberry-Pi-Analogue-to-Digital-converter
 
-5.. Write Python script to repeatedly read and display results, and LOG the results.
+5. Write Python script to repeatedly read and display results, and LOG the results.
 Evaluate how often results should be logged to provide usefull information.
 save the data as CSV file?
 
@@ -37,7 +35,9 @@ save the data as CSV file?
 
 7. Manage data logger file size / culling / management w.r.t. SD card size.
 
-HARDWARE
+8. Create an additional interface that uses a resfull API to write the I and V measurement information out to a database in the cloud.
+
+<b>HARDWARE</b>
 
 A. Use 2 resistors to make potential dividers to generate voltages to read on A/D channels. 
 (Giles)
@@ -57,7 +57,5 @@ iV) Current from USB 5V input into scanner.
 If we need more channels, we can add a second A to D board (on a different I2C ID)
 
 Document design and operation
-
-Put the software., documentation and schematics into Github
 
 -END-
